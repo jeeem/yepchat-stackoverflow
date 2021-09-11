@@ -64,7 +64,7 @@ const App = () => {
       }
       setTimeout(
         () => selectQuestion(initialState.questionId, true),
-        2000
+        5000
       )
     }
     getInitialState();
