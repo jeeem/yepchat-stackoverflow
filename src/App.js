@@ -62,10 +62,12 @@ const App = () => {
       if (initialState.topic) {
         selectTopic(initialState.topic, true)
       }
-      setTimeout(
-        () => selectQuestion(initialState.questionId, true),
-        5000
-      )
+      if (initialState.questionId) {
+        setTimeout(
+          () => selectQuestion(initialState.questionId, true),
+          5000
+        )
+      }
     }
     getInitialState();
   }, [])
